@@ -29,7 +29,7 @@ function NewDeck() {
             {breadCrumb} 
             <form onSubmit = {handleSubmit}>
                 <div className="form-group">
-                    <label for="Name">Name</label>
+                    <label htmlFor="Name">Name</label>
                     <input type="text" 
                     className="form-control" 
                     id="Name" 
@@ -38,7 +38,7 @@ function NewDeck() {
                     onChange = {handleNameChange}/> 
                 </div>
                 <div className="form-group">
-                    <label for="Description">Description</label>
+                    <label htmlFor="Description">Description</label>
                     <textarea 
                     className="form-control" 
                     id="Description" 

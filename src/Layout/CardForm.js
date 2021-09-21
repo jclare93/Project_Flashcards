@@ -13,6 +13,7 @@ function CardForm({deckId}) {
     const abortController = new AbortController();
 
     useEffect(() => {
+        const abortController = new AbortController();
         async function loadDeck(){
             const foundDeck = await readDeck(deckId, abortController.signal);
             setDeck(foundDeck); 
@@ -35,7 +36,7 @@ function CardForm({deckId}) {
     return(
     <form onSubmit = {handleSubmit}>
         <div className="form-group">
-            <label for="Name">Name</label>
+            <label htmlFor="Name">Name</label>
             <input type="text" 
             className="form-control" 
             id="Name" 
@@ -44,7 +45,7 @@ function CardForm({deckId}) {
             onChange = {handleNameChange}/> 
         </div>
         <div className="form-group">
-            <label for="Description">Description</label>
+            <label htmlFor="Description">Description</label>
             <textarea 
             className="form-control" 
             id="Description" 

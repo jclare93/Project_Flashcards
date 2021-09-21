@@ -5,11 +5,11 @@ import CardList from "./cards/CardList"
 
 function Study(){
     const { deckId } = useParams();
-    const abortController = new AbortController();
     const [deck, setDeck] = useState({})
     
     
     useEffect(() => {
+        const abortController = new AbortController();
         async function loadDeck(){
             const foundDeck = await readDeck(deckId, abortController.signal);
             setDeck(foundDeck)

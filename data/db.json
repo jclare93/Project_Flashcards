@@ -13,13 +13,18 @@
       "id": 2,
       "deckName": "React Router",
       "deckInfo": "React Router is a collection of navigational components that compose declaratively with your application."
+    },
+    {
+      "name": "",
+      "description": "",
+      "id": 3
     }
   ],
   "cards": [
     {
       "id": 1,
       "front": "Differentiate between Real DOM and Virtual DOM.",
-      "back": "Virtual DOM updates are faster but do not directly update the HTML",
+      "back": "Virtual DOM updates are faster but do not directly update the HTML.",
       "deckId": 1
     },
     {
@@ -51,6 +56,12 @@
       "back": "b",
       "deckId": 1,
       "id": 10
+    },
+    {
+      "front": "",
+      "back": "",
+      "deckId": 1,
+      "id": 11
     }
   ]
 }
