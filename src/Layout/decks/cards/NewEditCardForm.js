@@ -42,7 +42,7 @@ function NewEditCardForm({cardId, deckId}) {
                 rows="3" 
                 placeholder="Front Side of Card"
                 value = {card.front}
-                onChange = {handleFrontChange}>{card.front}</textarea>
+                onChange = {handleFrontChange} required>{card.front}</textarea>
             </div>
             <div className="form-group">
                 <label htmlFor="Back">Back</label>
@@ -52,7 +52,7 @@ function NewEditCardForm({cardId, deckId}) {
                 rows="3" 
                 placeholder = "Back Side of Card"
                 value = {card.back}
-                onChange = {handleBackChange}>{card.back}</textarea>
+                onChange = {handleBackChange} required>{card.back}</textarea>
             </div>
             <Link to= {`/decks/${deckId}`} className = "btn btn-scondary">Cancel</Link>
             <button type="submit" className="btn btn-primary">Submit</button>

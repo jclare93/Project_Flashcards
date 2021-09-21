@@ -35,7 +35,7 @@ function NewDeck() {
                     id="Name" 
                     placeholder="Deck Name" 
                     value = {newDeck.name}
-                    onChange = {handleNameChange}/> 
+                    onChange = {handleNameChange} required/> 
                 </div>
                 <div className="form-group">
                     <label htmlFor="Description">Description</label>
@@ -45,7 +45,7 @@ function NewDeck() {
                     placeholder = "Brief description of the deck"
                     rows="3" 
                     value = {newDeck.description}
-                    onChange = {handleInfoChange}></textarea>
+                    onChange = {handleInfoChange} required></textarea>
                 </div>
                 <Link to= "/" className = "btn btn-scondary"> Cancel </Link>
                 <button type="submit" className="btn btn-primary">Submit</button>

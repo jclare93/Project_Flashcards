@@ -42,7 +42,7 @@ function CardForm({deckId}) {
             id="Name" 
             placeholder="Deck Name" 
             value = {deckName}
-            onChange = {handleNameChange}/> 
+            onChange = {handleNameChange} required/> 
         </div>
         <div className="form-group">
             <label htmlFor="Description">Description</label>
@@ -51,7 +51,7 @@ function CardForm({deckId}) {
             id="Description" 
             rows="3" 
             value = {deckInfo}
-            onChange = {handleInfoChange}></textarea>
+            onChange = {handleInfoChange} required></textarea>
         </div>
         <Link to= "/" className = "btn btn-scondary"> Cancel </Link>
         <button type="submit" className="btn btn-primary">Submit</button>
